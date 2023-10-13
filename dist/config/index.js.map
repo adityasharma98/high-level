@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"/","sources":["config/index.ts"],"names":[],"mappings":";;;AAAA,2DAA2D;AAC9C,QAAA,MAAM,GAAG,UAAU,CAAC","sourcesContent":["import * as app_config from \"./credentials/appConfig.json\";\nexport const config = app_config;\n"]}

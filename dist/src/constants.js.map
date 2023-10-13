@@ -1,0 +1,1 @@
+{"version":3,"file":"constants.js","sourceRoot":"/","sources":["src/constants.ts"],"names":[],"mappings":";;;AAAA,IAAY,WAKX;AALD,WAAY,WAAW;IACrB,0BAAW,CAAA;IACX,4BAAa,CAAA;IACb,0BAAW,CAAA;IACX,gCAAiB,CAAA;AACnB,CAAC,EALW,WAAW,2BAAX,WAAW,QAKtB","sourcesContent":["export enum RestMethods {\n  GET = \"GET\",\n  POST = \"POST\",\n  PUT = \"PUT\",\n  DELETE = \"DELETE\",\n}\n"]}

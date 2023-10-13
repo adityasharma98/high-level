@@ -1,0 +1,29 @@
+{
+  "family": "%FAMILY_NAME%",
+  "executionRoleArn": "arn:aws:iam::247653494814:role/ecsTaskExecutionRole",
+  "placementConstraints": [],
+  "cpu": "%CPU_CAPACITY%",
+  "memory": "%MEMORY_CAPACITY%",
+  "taskRoleArn": "arn:aws:iam::247653494814:role/ecsTaskExecutionRole",
+  "containerDefinitions": [
+    {
+      "image": "%REPO_URI%:%BUILD_TAG%",
+      "name": "%CONTAINER_NAME%",
+      "essential": true,
+      "portMappings": [
+        {
+          "containerPort": 3000,
+          "hostPort": 0
+        }
+      ],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/mb-labs-oms-prod",
+          "awslogs-region": "ap-south-1",
+          "awslogs-stream-prefix": "ecs"
+        }
+      }
+    }
+  ]
+}
